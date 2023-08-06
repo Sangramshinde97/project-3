@@ -5,7 +5,10 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-               checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/Sangramshinde97/project-3.git']]])
+               gitCheckout(
+                branch: "main",
+                url: "https://github.com/vikash-kumar01/mrdevops_java_app.git"
+            )
                 }
             }
         }
