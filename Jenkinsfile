@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git 'https://github.com/Sangramshinde97/project-3.git'
+                gitCheckout{
+                    branch: "master"
+                    url: "https://github.com/Sangramshinde97/project-3.git"
+                }
             }
         }
     }
