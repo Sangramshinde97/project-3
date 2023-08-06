@@ -1,4 +1,4 @@
-@Library("sangram-sharable-lib") _
+@Library('sangram-sharable-lib') _
 pipeline {
     agent any
 
