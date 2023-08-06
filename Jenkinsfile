@@ -16,8 +16,9 @@ pipeline {
                 script{
                    
                    mvnTest()
+                    
                }
-            )
+          
                 }
             }
         }
