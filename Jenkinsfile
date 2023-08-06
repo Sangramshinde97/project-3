@@ -5,9 +5,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                gitCheckout{
-                    branch: "master"
-                    url: "https://github.com/Sangramshinde97/project-3.git"
+               checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/Sangramshinde97/project-3.git']]])
                 }
             }
         }
